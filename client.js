@@ -9,19 +9,16 @@ const connect = function() {
   
   // interpret incoming data as text
   conn.setEncoding("utf8");
-  
-    
   conn.on("connect", () => {
   // code that does something when the connection is first established
     conn.write("Name: KWL");
     conn.write("Say: IP: " + ip);
-    /*    setInterval(() => {
-        conn.write("Move: up");
-      }, 50);
-    */
-    console.log("you ded cuz you idled");
   });
-  
+  conn.on("data", (data) => {
+    console.log("Server says:", data);
+    console.log("Bye!");
+    process.exit();
+  });
   return conn;
 };
 
