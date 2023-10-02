@@ -9,7 +9,8 @@ const setupInput = (conn) => {
   stdin.on("data", (key) => handleUserInput(key));
   return stdin;
 };
-  
+
+//handle the user input, convert the input w,a,s,d into the corresponding snake action.
 const handleUserInput = function(key) {
   key = key.toLowerCase();
   if (key === "w") {
