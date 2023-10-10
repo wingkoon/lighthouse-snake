@@ -21,8 +21,6 @@ Before you can run this client, you will need to be running the server side whic
 
 
 
-
-
 !["Start screen"](./start.jpg)
 !["Control the snake to move"](./snake_move1.jpg)
 !["Snake moves"](./snake_move2.jpg)
